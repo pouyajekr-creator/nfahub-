@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>کافه سه‌بعدی</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <div id="overlay"></div>
+
+  <div id="hud" class="hidden">
+    <div class="pill" id="hud-day">روز ۱</div>
+    <div class="pill" id="hud-coins">🪙 ۰</div>
+    <div class="pill timer"><div id="hud-timer-fill"></div><span id="hud-timer-text"></span></div>
+    <button class="pill btn" id="btn-recipes">📖 دستورها</button>
+    <button class="pill btn" id="btn-sound">🔊</button>
+  </div>
+  <div id="hand" class="hidden"></div>
+  <div id="toast"></div>
+
+  <div id="recipes" class="panel hidden">
+    <div class="card">
+      <h2>دستور پخت‌ها</h2>
+      <div id="recipe-list"></div>
+      <button class="primary" id="btn-close-recipes">بستن</button>
+    </div>
+  </div>
+
+  <div id="screen" class="panel">
+    <div class="card" id="screen-card">
+      <h1>☕ کافه سه‌بعدی</h1>
+      <p id="loading">در حال بارگذاری مدل‌ها…</p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
